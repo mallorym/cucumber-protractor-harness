@@ -3,13 +3,14 @@ exports.config = {
   getPageTimeout: 60000,
   allScriptsTimeout: 500000,
   framework: 'custom',
+  resultJsonOutputFile: 'report.json',
   // path relative to the current config file
   frameworkPath: require.resolve('protractor-cucumber-framework'),
   capabilities: {
     browserName: 'chrome',
     'chromeOptions': {
-      args: ['--no-sandbox'] 
-    }   
+      args: ['--no-sandbox']
+    }
   },
 
   // Spec patterns are relative to this directory.
